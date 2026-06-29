@@ -1,0 +1,6 @@
+{
+  "name": "Lumora Design",
+  "description": "AI-Powered Social Media Designs That Turn Views Into Customers",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

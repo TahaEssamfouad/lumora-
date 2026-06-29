@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #2563EB;
+  --color-brand-secondary: #1E40AF;
+  --color-brand-accent: #D4AF37;
+  --color-brand-charcoal: #0F172A;
+  --color-brand-bg: #F8FAFC;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-charcoal);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom styles for luxury glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Bento Grid Theme Classes */
+.bento-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f0f6ff; /* blue-50 */
+  color: #2563EB;
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #dbeafe; /* blue-100 */
+  width: fit-content;
+}
+
+.bento-badge-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fefbeb; /* amber-50 */
+  color: #D4AF37;
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #fef3c7; /* amber-100 */
+  width: fit-content;
+}
+
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0; /* slate-200 */
+  border-radius: 2rem; /* rounded-[2rem] */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.06);
+  transform: translateY(-2px);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.bento-card-dark {
+  background-color: #0F172A; /* brand-charcoal */
+  color: #ffffff;
+  border: 3px solid rgba(212, 175, 55, 0.15); /* gold highlight */
+  border-radius: 2rem; /* rounded-[2rem] */
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card-dark:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.1);
+  transform: translateY(-2px);
+}
+
+.bento-card-primary {
+  background-color: #2563EB; /* brand-primary */
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card-primary:hover {
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+  transform: translateY(-2px);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 50%, #F59E0B 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #B45309 0%, #D4AF37 50%, #9A3412 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hide scrollbars but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
