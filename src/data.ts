@@ -9,122 +9,122 @@ import {
 export const servicesData: ServiceItem[] = [
   {
     id: 'instagram-posts',
-    title: 'Instagram Post Design',
-    titleAr: 'تصميم منشورات إنستغرام',
-    description: 'Stop the scroll with thumb-stopping aesthetics that turn followers into brand advocates and loyal customers.',
-    descriptionAr: 'منشورات جذابة توقف التمرير، وتحول المتابعين إلى مروجين للعلامة التجارية وعملاء مخلصين.',
+    title: 'Instagram Ads That Stop the Scroll',
+    titleAr: 'إعلانات إنستغرام توقف التمرير',
+    description: 'Hook attention in 0.3 seconds. Drive profile visits, DMs, and link clicks.',
+    descriptionAr: 'اجذب الانتباه خلال 0.3 ثانية. ضاعف زيارات الملف الشخصي، الرسائل المباشرة، والنقرات على الروابط.',
     icon: 'Instagram',
-    ctaText: 'Get Custom Instagram Designs',
+    ctaText: 'Get Scroll-Stopping Ads',
     category: 'social'
   },
   {
     id: 'facebook-ads',
-    title: 'Facebook Ad Creatives',
-    titleAr: 'إعلانات فيسبوك الإبداعية',
-    description: 'High-converting ad designs optimized for Meta’s algorithm to lower your CPA and skyrocket purchases.',
-    descriptionAr: 'تصاميم إعلانية عالية التحويل ومحسنة لخوارزمية ميتا لتقليل تكلفة الاكتساب وزيادة المبيعات.',
+    title: 'Facebook Ads That Lower CPA',
+    titleAr: 'إعلانات فيسبوك لخفض تكلفة العميل (CPA)',
+    description: 'Pixel-perfect layouts optimized for Meta\'s algorithm to reduce ad costs.',
+    descriptionAr: 'مخططات مثالية البكسل ومحسنة لخوارزمية ميتا لتقليل تكاليف الإعلانات ومضاعفة العائد.',
     icon: 'Facebook',
-    ctaText: 'Optimize My Facebook Ads',
+    ctaText: 'Lower My CPA Now',
     category: 'ads'
   },
   {
     id: 'carousel-design',
-    title: 'Engaging Carousel Slides',
-    titleAr: 'تصميم شرائح الدوار (Carousel)',
-    description: 'Story-driven multi-slide graphics that keep users swiping, increasing dwell time and brand recall.',
-    descriptionAr: 'رسومات متعددة الشرائح تعتمد على السرد القصصي لتشجيع المستخدمين على التمرير وزيادة وقت التفاعل.',
+    title: 'Carousel Ads That Tell Stories',
+    titleAr: 'إعلانات الدوار التي تسرد القصص (Carousel)',
+    description: 'Multi-slide sequences that increase dwell time and push users to swipe to buy.',
+    descriptionAr: 'شرائح متسلسلة تزيد من وقت بقاء المستخدمين وتدفعهم للتمرير والشراء الفوري.',
     icon: 'Layers',
-    ctaText: 'Boost My Engagement',
+    ctaText: 'Boost Storytelling Ads',
     category: 'social'
   },
   {
     id: 'pinterest-pins',
-    title: 'Viral Pinterest Pins',
-    titleAr: 'تصميم دبابيس بينتيريست',
-    description: 'Elegant, search-optimized visual assets designed to drive massive organic traffic directly to your storefront.',
-    descriptionAr: 'أصول مرئية أنيقة ومحسنة لمحركات البحث مصممة لجلب زيارات مجانية ضخمة مباشرة إلى متجرك.',
+    title: 'Pinterest Pins That Drive Traffic',
+    titleAr: 'دبابيس بينتيريست لجلب الزيارات الكثيفة',
+    description: 'Search-optimized visuals designed to rank and redirect to your storefront.',
+    descriptionAr: 'تصاميم بصرية محسنة لمحركات البحث ومصممة للتصدر وجلب العملاء مباشرة لمتجرك.',
     icon: 'Pin',
-    ctaText: 'Drive Organic Traffic',
+    ctaText: 'Drive Direct Web Traffic',
     category: 'social'
   },
   {
     id: 'restaurant-ads',
-    title: 'Mouth-Watering Restaurant Ads',
-    titleAr: 'إعلانات المطاعم الشهية',
-    description: 'Sensory-rich layouts for menus, deals, and local campaigns that make food lovers order instantly.',
-    descriptionAr: 'مخططات غنية بالتفاصيل الحسية للقوائم والعروض والأسعار تجعل محبي الطعام يطلبون على الفور.',
+    title: 'Restaurant Ads That Trigger Hunger',
+    titleAr: 'إعلانات مطاعم تحرك الجوع وتجذب الطلبات',
+    description: 'Sensory-rich layouts for menus, deals, and local campaigns that drive orders.',
+    descriptionAr: 'تنسيقات غنية بالحواس للقوائم والعروض والوجبات المحلية تزيد من طلبات الطعام فوراً.',
     icon: 'Utensils',
-    ctaText: 'Fill Your Tables',
+    ctaText: 'Get Hungry Customers',
     category: 'industry'
   },
   {
     id: 'beauty-ads',
-    title: 'Luxury Beauty & Cosmetics Ads',
-    titleAr: 'إعلانات مستحضرات التجميل الفاخرة',
-    description: 'Minimal, editorial-grade designs highlighting texture, premium quality, and emotional transformations.',
-    descriptionAr: 'تصاميم تحريرية بسيطة وراقية تسلط الضوء على التفاصيل والجودة الفائقة والتأثير الجمالي.',
+    title: 'Beauty Ads That Sell Transformation',
+    titleAr: 'إعلانات التجميل لبيع التأثير والتحول الجمالي',
+    description: 'Editorial-grade designs highlighting texture, results, and emotional desire.',
+    descriptionAr: 'تصاميم بمستوى المجلات التحريرية تبرز الملمس والنتائج الملموسة وتبني الرغبة العاطفية.',
     icon: 'Sparkles',
-    ctaText: 'Elevate Your Beauty Brand',
+    ctaText: 'Sell Transformation Aesthetics',
     category: 'industry'
   },
   {
     id: 'healthcare-ads',
-    title: 'Empathetic Healthcare Creatives',
-    titleAr: 'إعلانات الرعاية الصحية المتعاطفة',
-    description: 'Trust-first educational layouts for clinics, doctors, and wellness programs designed with clarity and care.',
-    descriptionAr: 'مخططات تعليمية تركز على بناء الثقة للعيادات والأطباء والبرامج الصحية مصممة بوضوح وعناية.',
+    title: 'Healthcare Creatives That Build Trust',
+    titleAr: 'تصاميم الرعاية الصحية لبناء الثقة الكاملة',
+    description: 'Clear, empathetic layouts for clinics and doctors that convert consultations.',
+    descriptionAr: 'مخططات واضحة ومتعاطفة للعيادات والأطباء تسهم في تحويل القراء إلى استشارات حقيقية.',
     icon: 'HeartPulse',
-    ctaText: 'Build Patient Trust',
+    ctaText: 'Build Patient Confidence',
     category: 'industry'
   },
   {
     id: 'real-estate-ads',
-    title: 'Prestige Real Estate Showcases',
-    titleAr: 'تصاميم العقارات الفاخرة',
-    description: 'Premium layouts that capture architectural beauty, property metrics, and elite lifestyle benefits.',
-    descriptionAr: 'تصاميم متميزة تبرز الجمال المعماري، وتفاصيل العقارات، ومزايا نمط الحياة الفاخر.',
+    title: 'Real Estate Showcases That Sell Lifestyle',
+    titleAr: 'عروض عقارية تبيع نمط الحياة الراقي',
+    description: 'Premium layouts capturing architectural beauty, location, and investment value.',
+    descriptionAr: 'تصاميم متميزة تبرز الجمال المعماري والموقع المتميز والقيمة الاستثمارية للعقارات.',
     icon: 'Building',
-    ctaText: 'Sell Your Properties',
+    ctaText: 'Showcase Properties Beautifully',
     category: 'industry'
   },
   {
     id: 'ecommerce-ads',
-    title: 'High-Yield E-commerce Banners',
-    titleAr: 'لافتات التجارة الإلكترونية عالية العائد',
-    description: 'Direct-response product banners styled to feature clear pricing, features, and urgent social proof.',
-    descriptionAr: 'لافتات منتجات للاستجابة المباشرة مصممة لعرض الأسعار والمميزات والضمانات بوضوح.',
+    title: 'E-commerce Banners That Push Checkout',
+    titleAr: 'لافتات تجارة إلكترونية تدفع لإتمام الشراء',
+    description: 'Direct-response product banners with clear pricing, features, and urgency.',
+    descriptionAr: 'لافتات منتجات استجابة مباشرة توضح الأسعار والمزايا وحالة الاستعجال لجلب المبيعات.',
     icon: 'ShoppingBag',
-    ctaText: 'Scale E-commerce Sales',
+    ctaText: 'Increase Checkout Ratios',
     category: 'ads'
   },
   {
     id: 'ai-product-images',
-    title: 'AI Product Photography & Editing',
-    titleAr: 'تصوير وتحرير المنتجات بالذكاء الاصطناعي',
-    description: 'Hyper-realistic AI-enhanced product backgrounds and context renders that look like a $10,000 studio shoot.',
-    descriptionAr: 'خلفيات منتجات واقعية للغاية ومعززة بالذكاء الاصطناعي تبدو وكأنها جلسة تصوير في استوديو فاخر.',
+    title: 'AI-Enhanced Product Photography',
+    titleAr: 'تصوير المنتجات المعزز بالذكاء الاصطناعي',
+    description: 'Hyper-realistic product renders and backgrounds that look like 10k studio shots.',
+    descriptionAr: 'خلفيات منتجات ورسومات واقعية للغاية تبدو وكأنها التقطت في استوديو بتكلفة 10 آلاف دولار.',
     icon: 'Camera',
-    ctaText: 'Generate Premium Photos',
+    ctaText: 'Generate Studio photography',
     category: 'tech'
   },
   {
     id: 'brand-identity',
-    title: 'Social Brand Identity Kits',
+    title: 'Brand Identity Kits',
     titleAr: 'حزم الهوية البصرية للشبكات الاجتماعية',
-    description: 'Cohesive guidelines covering custom typography, color codes, layouts, and styles for unified branding.',
-    descriptionAr: 'إرشادات متماسكة تشمل الخطوط المخصصة، الألوان، والمخططات للحفاظ على هوية موحدة لعلامتك التجارية.',
+    description: 'Cohesive typography, color codes, and layout systems for unified branding.',
+    descriptionAr: 'أنظمة خطوط متسقة، أكواد ألوان، ومخططات واضحة تضمن توحيد علامتك التجارية بالكامل.',
     icon: 'Crown',
-    ctaText: 'Align Your Branding',
+    ctaText: 'Get Brand Identity Kit',
     category: 'tech'
   },
   {
     id: 'marketing-creatives',
-    title: 'Seasonal Marketing Campaigns',
-    titleAr: 'الحملات التسويقية الموسمية',
-    description: 'Highly responsive and conversion-focused templates for Black Friday, holidays, and flash sales.',
-    descriptionAr: 'قوالب سريعة الاستجابة ومحسنة للتحويل لمناسبات مثل الجمعة البيضاء، والأعياد، والتخفيضات السريعة.',
+    title: 'Seasonal Campaign Packs',
+    titleAr: 'حزم الحملات الإعلانية الموسمية والخصومات',
+    description: 'Black Friday, holidays, and flash sale templates built for urgency.',
+    descriptionAr: 'قوالب خاصة بالجمعة البيضاء، الأعياد، والتخفيضات السريعة ومصممة لبناء دافع الاستعجال.',
     icon: 'Megaphone',
-    ctaText: 'Launch Your Campaign',
+    ctaText: 'Access Seasonal Packs',
     category: 'ads'
   }
 ];
@@ -139,6 +139,14 @@ export const portfolioProjects: PortfolioProject[] = [
     descriptionAr: 'قصص ومخططات إنستغرام أنيقة تبرز وسائل الراحة الفاخرة، والأسعار بشفافية، وزر حجز مباشر.',
     engagementIncrease: '+240%',
     conversionRate: '4.8%',
+    client: 'Sienna Luxury Apartments',
+    clientAr: 'شقق سيينا الفاخرة',
+    goal: 'Increase booking inquiries for 3 remaining penthouses.',
+    goalAr: 'زيادة طلبات الحجز للـ 3 شقق بنتهاوس المتبقية.',
+    challenge: 'High-end market requires trust and exclusivity, not hard selling.',
+    challengeAr: 'السوق الراقي يتطلب بناء الثقة والحصرية الشديدة وليس أسلوب البيع الملح والمباشر.',
+    solution: 'Elegant Instagram stories with transparent pricing and direct booking CTA.',
+    solutionAr: 'قصص إنستغرام أنيقة للغاية بأسعار واضحة تماماً مع زر لاتخاذ إجراء الحجز المباشر المريح.',
     mockupDetails: {
       title: 'Sienna Luxury',
       hook: 'Only 3 Penthouses Left',
@@ -158,6 +166,14 @@ export const portfolioProjects: PortfolioProject[] = [
     descriptionAr: 'جمالية ناعمة وبسيطة تركز على المكونات العضوية النقية، وشهادات الخلو من القسوة، وآراء العملاء الحقيقية.',
     engagementIncrease: '+310%',
     conversionRate: '6.2%',
+    client: 'Glow Skin Cosmetics',
+    clientAr: 'مستحضرات التجميل جلو سكين',
+    goal: 'Rebrand launch for organic skincare line.',
+    goalAr: 'إعادة إطلاق وتدشين خط مستحضرات العناية بالبشرة العضوية بالكامل.',
+    challenge: 'Needed to justify premium pricing against mass-market competitors.',
+    challengeAr: 'تطلب الأمر تبرير الأسعار المرتفعة والمميزة أمام المنافسين العاديين في السوق.',
+    solution: 'Minimalist aesthetic emphasizing organic certification + transformation reviews.',
+    solutionAr: 'مظهر جمالي بسيط يركز بقوة على الشهادات العضوية والتحول الفعلي عبر آراء العملاء بالصور.',
     mockupDetails: {
       title: 'GLOW SKINCARE',
       hook: '100% Organic Formula',
@@ -177,6 +193,14 @@ export const portfolioProjects: PortfolioProject[] = [
     descriptionAr: 'إعلانات مرئية ذات تباين عالٍ تبرز حبوب البن العضوية، ومراحل التحميص التقليدية، وخصومات الصباح الحصرية.',
     engagementIncrease: '+185%',
     conversionRate: '5.4%',
+    client: 'Artisan Cafe',
+    clientAr: 'مقهى أرتيزان الإبداعي',
+    goal: 'Launch new morning bundle and drive foot traffic.',
+    goalAr: 'إطلاق باقة عروض الصباح الجديدة وزيادة حركة زوار المقهى على الأرض.',
+    challenge: 'Local competition with bigger budgets.',
+    challengeAr: 'مواجهة منافسة محلية شرسة للغاية مع ميزانيات تسويق ضخمة من المقاهي المجاورة.',
+    solution: 'Moody, high-contrast visuals with rustic roasting setups and exclusive discount.',
+    solutionAr: 'تصاميم جذابة وعميقة التباين تستعرض تحميص البن الطازج مع خصم صباحي حصري محفز.',
     mockupDetails: {
       title: 'ARTISAN COFFEE',
       hook: 'Freshly Roasted Daily',
@@ -196,6 +220,14 @@ export const portfolioProjects: PortfolioProject[] = [
     descriptionAr: 'خطوط ديناميكية ممزوجة بتأثيرات داكنة حديثة ونصوص فسفورية لزيادة الحماس والاشتراك في العضوية.',
     engagementIncrease: '+150%',
     conversionRate: '3.9%',
+    client: 'Pulse Gym',
+    clientAr: 'نادي نبض اللياقة البدنية',
+    goal: 'Drive membership sign-ups without contracts.',
+    goalAr: 'زيادة معدل الاشتراكات الجديدة في عضوية النادي بدون عقود والتزامات طويلة.',
+    challenge: 'Gym market is saturated; needs motivation, not information.',
+    challengeAr: 'سوق نوادي اللياقة مشبع بالكامل؛ يحتاج المستهلك هنا للمحفز الداخلي وليس مجرد نصوص معلوماتية.',
+    solution: 'Dynamic typography + dark overlays + neon accents for energy.',
+    solutionAr: 'تطبيق خطوط ديناميكية قوية مع طبقات تعتيم بصرية وومضات نيون فسفورية تشع بالطاقة والإنجاز.',
     mockupDetails: {
       title: 'PULSE FITNESS',
       hook: 'No Contracts. Cancel Anytime.',
@@ -215,6 +247,14 @@ export const portfolioProjects: PortfolioProject[] = [
     descriptionAr: 'مخططات إعلانية فاخرة مستوحاة من آبل تركز على تفاصيل الحرفية والتراث والعد التنازلي للقطع المحدودة.',
     engagementIncrease: '+420%',
     conversionRate: '7.1%',
+    client: 'Lumiere Chrono',
+    clientAr: 'ساعات لوميير الفاخرة',
+    goal: 'Sell 250 limited edition timepieces.',
+    goalAr: 'بيع وإتمام مبيعات 250 ساعة ذات إصدار محدود بالكامل.',
+    challenge: 'Luxury requires scarcity and heritage, not discounts.',
+    challengeAr: 'يتطلب بيع السلع الفاخرة إبراز الندرة الشديدة والتراث العريق، وليس تقديم الخصومات.',
+    solution: 'Apple-inspired layouts focusing on craftsmanship and limited countdown.',
+    solutionAr: 'تخطيطات مستوحاة من أسلوب آبل البصري الفاخر تركز على دقة الصنع والعد التنازلي المحدود للقطع.',
     mockupDetails: {
       title: 'LUMIERE CHRONO',
       hook: 'Numbered Edition / 250 Units',
@@ -234,6 +274,14 @@ export const portfolioProjects: PortfolioProject[] = [
     descriptionAr: 'لقطات شاشة أنيقة بالوضع الداكن، ومخططات بيانية ملونة، وفوائد تركز على الميزات وتستهدف سير العمل الحديث.',
     engagementIncrease: '+290%',
     conversionRate: '5.1%',
+    client: 'Apex Engine',
+    clientAr: 'محرك الإنتاجية الأسرع Apex',
+    goal: 'Increase free trial sign-ups for productivity tool.',
+    goalAr: 'زيادة معدل التسجيل في الفترة التجريبية المجانية لأداة زيادة الإنتاجية الرقمية.',
+    challenge: 'B2B buyers need clarity on integration, not just features.',
+    challengeAr: 'يحتاج مشترو قطاع الأعمال والشركات لضمان توافق وتكامل الأداة، وليس مجرد سرد المزايا.',
+    solution: 'Dark mode screenshots + metric charts + Slack/Notion integration badges.',
+    solutionAr: 'استعراض واجهة الأداة بالوضع الداكن الفاخر مع رسوم بيانية تفاعلية وشارات توضح تكامل Slack و Notion.',
     mockupDetails: {
       title: 'APEX ENGINE',
       hook: 'Integrates with Slack & Notion',
@@ -293,86 +341,54 @@ export const trustMetrics = {
 export const whyChooseUsData = {
   en: [
     {
-      title: 'AI + Human Creativity',
-      desc: 'We merge hyper-intelligent AI asset generation with elite human copywriting to create creatives that outperform competitors.'
+      title: 'Your First Draft in 24 Hours',
+      desc: 'Stop waiting weeks. Get your first high-converting, custom-tailored advertising draft delivered in less than 24 hours.'
     },
     {
-      title: '24-Hour Draft Turnaround',
-      desc: 'Stop waiting weeks. Get your first high-converting advertising draft delivered in less than 24 hours.'
+      title: 'You Own 100% of Everything',
+      desc: 'You retain full commercial rights and 100% intellectual property ownership. No licensing fees, no restrictions, use anywhere forever.'
     },
     {
-      title: 'Commercial Use Rights',
-      desc: 'You retain 100% intellectual property ownership of every single design. Ready for digital, print, and paid amplification.'
+      title: 'Designed for Conversions, Not Likes',
+      desc: 'We do not sell pretty art. We use AIDA psychology, direct-response triggers, and loss aversion to turn random scrollers into active buyers.'
     },
     {
-      title: 'Unlimited Creative Control',
-      desc: 'With our premium packages, we adapt to your feedback instantly until you are 100% proud of the final campaign.'
-    },
-    {
-      title: 'Premium Support Desk',
-      desc: 'Direct, VIP communication channel with your dedicated strategist. No middle managers or slow email tickets.'
-    },
-    {
-      title: 'Conversion-Focused Strategy',
-      desc: 'We do not sell pretty art. We design high-performing psychological triggers that turn random viewers into cash customers.'
-    },
-    {
-      title: 'Fair & Transparent Pricing',
-      desc: 'No hidden fees, no long contracts, and no onboarding charges. Pay a simple flat price tailored to your actual workload.'
-    },
-    {
-      title: 'Modern Marketing Copywriting',
-      desc: 'Our headlines leverage professional AIDA (Attention, Interest, Desire, Action) formulas to force readers to read every line.'
+      title: 'Flat Pricing. No Surprises.',
+      desc: 'Pay a simple flat price. Enjoy unlimited revisions, zero hidden fees, and absolutely no long-term contract lock-ins.'
     }
   ],
   ar: [
     {
-      title: 'الذكاء الاصطناعي + الإبداع البشري',
-      desc: 'ندمج تقنيات التوليد المتطورة بالذكاء الاصطناعي مع الصياغة الإبداعية البشرية لإنتاج إعلانات تتفوق على جميع منافسيك.'
+      title: 'مسودتك الأولى في 24 ساعة',
+      desc: 'لا تنتظر لأسابيع. احصل على أول مسودة إعلانية مصممة ومخصصة لك وعالية التحويل في غضون 24 ساعة فقط.'
     },
     {
-      title: 'تسليم المسودة خلال 24 ساعة',
-      desc: 'توقف عن الانتظار لأسابيع. استلم أول مسودة إعلانية عالية التحويل في أقل من 24 ساعة فقط.'
+      title: 'تمتلك 100٪ من كل شيء',
+      desc: 'تحتفظ بحقوق الاستخدام التجاري الكاملة والملكية الفكرية بنسبة 100٪ للتصاميم. بدون رسوم ترخيص، واستخدمها في أي مكان وإلى الأبد.'
     },
     {
-      title: 'حقوق الاستخدام التجاري الكاملة',
-      desc: 'تمتلك 100٪ من حقوق الملكية الفكرية لكل تصميم نقوم بإنتاجه. جاهز للاستخدام الرقمي، والمطبوع، والحملات الممولة.'
+      title: 'تصاميم للمبيعات، وليس الإعجابات',
+      desc: 'نحن لا نبيع لوحات فنية مفرغة؛ بل نعتمد على علم النفس التسويقي AIDA، ومحفزات الاستجابة المباشرة لتحويل المتصفحين إلى مشترين.'
     },
     {
-      title: 'خيارات إبداعية بلا حدود',
-      desc: 'مع باقاتنا المتميزة، نعدل ونطور التصاميم بناءً على ملاحظاتك فوراً حتى تصل إلى الرضا الكامل عن النتيجة.'
-    },
-    {
-      title: 'دعم فني متميز ومباشر',
-      desc: 'قناة اتصال مباشرة وسريعة مع الاستراتيجي المخصص لعلامتك التجارية دون أي وسطاء أو تذاكر دعم بطيئة.'
-    },
-    {
-      title: 'تصميم يركز على زيادة المبيعات',
-      desc: 'نحن لا نقدم مجرد لوحات فنية جميلة؛ بل نصمم محفزات نفسية مجربة تحول المشاهدين العابرين إلى عملاء يدفعون.'
-    },
-    {
-      title: 'أسعار واضحة وعادلة',
-      desc: 'بدون رسوم خفية، أو عقود طويلة الأمد، أو تكاليف بدء تشغيل غامضة. ادفع مبلغاً ثابتاً ومناسباً لحجم عملك الفعلي.'
-    },
-    {
-      title: 'كتابة إعلانية تسويقية حديثة',
-      desc: 'تعتمد عناويننا على صيغ تسويقية احترافية مثل AIDA (الانتباه، الاهتمام، الرغبة، الإجراء) لإجبار القراء على التفاعل.'
+      title: 'أسعار ثابتة بدون مفاجآت',
+      desc: 'ادفع سعراً ثابتاً وشفافاً. استمتع بتعديلات غير محدودة، بدون أي رسوم خفية، وبدون أي عقود طويلة الأمد تلتزم بها.'
     }
   ]
 };
 
 export const howItWorksSteps = {
   en: [
-    { step: '1', title: 'Tell us about your brand', desc: 'Share your business website, target audience, and current advertising challenges through our simple form.' },
-    { step: '2', title: 'Receive your first concepts', desc: 'Our team crafts a custom AI-driven psychological creative layout and delivers it within 24 hours.' },
-    { step: '3', title: 'Request dynamic adjustments', desc: 'Provide notes on layouts, headlines, or brand elements. We adapt instantly to perfection.' },
-    { step: '4', title: 'Download files & scale', desc: 'Receive your high-definition, commercial-ready digital assets and watch your conversions skyrocket.' }
+    { step: '1', title: 'Choose Your Package', desc: 'Pick the pricing tier that matches your current campaign goals and checkout securely.' },
+    { step: '2', title: 'Submit Your Brief', desc: 'Complete our simple 2-minute questionnaire about your product, target audience, and brand guidelines.' },
+    { step: '3', title: 'Review Your First Draft', desc: 'Get your custom-crafted direct-response design within 24 hours of brief submission.' },
+    { step: '4', title: 'Refine and Scale', desc: 'Use your unlimited revisions to perfect the design, download files, and watch your ad cost plummet.' }
   ],
   ar: [
-    { step: '1', title: 'أخبرنا عن عملك وعلامتك', desc: 'شاركنا رابط موقعك، جمهورك المستهدف، وتحدياتك الإعلانية الحالية من خلال نموذج بسيط.' },
-    { step: '2', title: 'استلم المسودات الأولى', desc: 'يقوم فريقنا بابتكار تصميم نفسي مخصص ومدعوم بالذكاء الاصطناعي ويسلمه لك في غضون 24 ساعة.' },
-    { step: '3', title: 'اطلب التعديلات والتطوير', desc: 'أضف ملاحظاتك على المخططات، العناوين، أو عناصر الهوية البصرية. سنقوم بتحديثها فوراً.' },
-    { step: '4', title: 'حمّل الملفات وابدأ النمو', desc: 'احصل على ملفاتك بجودة فائقة الجودة وجاهزة للاستخدام التجاري وراقب نمو مبيعاتك وتفاعلك.' }
+    { step: '1', title: 'اختر باقتك المفضلة', desc: 'اختر المستوى السعري الذي يناسب ميزانيتك وأهداف حملتك الإعلانية وأتمم الدفع بأمان.' },
+    { step: '2', title: 'أرسل تفاصيل طلبك', desc: 'أجب عن استبياننا البسيط خلال دقيقتين لتخبرنا عن منتجك، جمهورك المستهدف، ودليل هويتك البصرية.' },
+    { step: '3', title: 'راجع المسودة الأولى', desc: 'احصل على مسودة تصميم الاستجابة المباشرة المخصصة لك في غضون 24 ساعة فقط من إرسال التفاصيل.' },
+    { step: '4', title: 'عدّل وانطلق نحو النمو', desc: 'استغل التعديلات غير المحدودة للوصول للتصميم المثالي، حمّل الملفات، وشاهد انخفاض تكلفة إعلاناتك فورا.' }
   ]
 };
 
@@ -644,5 +660,13 @@ export const faqData: FaqItem[] = [
     answer: 'We tailor visual marketing formulas for e-commerce, real estate developers, fine beauty/cosmetic brands, dental and health clinics, upscale restaurants/cafes, gyms, personal brands, and high-growth startups.',
     answerAr: 'نقوم بتفصيل استراتيجيات تسويقية بصرية تناسب متاجر التجارة الإلكترونية، التطوير العقاري، العلامات التجارية الفاخرة للتجميل، العيادات والمراكز الطبية، المطاعم الفاخرة والمقاهي، النوادي الرياضية، والمشاريع الناشئة.',
     category: 'industries'
+  },
+  {
+    id: 'faq-8',
+    question: 'What if I am not satisfied with the designs?',
+    questionAr: 'ماذا يحدث إذا لم أكن راضيًا تمامًا عن التصاميم؟',
+    answer: 'We provide a 100% satisfaction guarantee. With our revision cycles, we will continuously adjust, tweak, and refine the colors, typography, and copywriting until we match your exact marketing vision perfectly.',
+    answerAr: 'نحن نقدم ضمان رضا كامل بنسبة 100٪. مع دورات المراجعة المشمولة في باقاتنا، سنستمر في تعديل وتحسين الألوان، الخطوط، والنصوص الإعلانية حتى تلائم رؤيتك التسويقية بدقة متناهية.',
+    category: 'satisfaction'
   }
 ];

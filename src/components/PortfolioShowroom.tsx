@@ -61,7 +61,7 @@ export default function PortfolioShowroom({ lang, onRequestSample }: PortfolioSh
       </div>
 
       {/* Showroom Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4" id="portfolio-project-grid">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4" id="portfolio-project-grid">
         {filteredProjects.map((project) => {
           const details = project.mockupDetails;
           const isHovered = hoveredProjectId === project.id;
@@ -89,7 +89,7 @@ export default function PortfolioShowroom({ lang, onRequestSample }: PortfolioSh
                       </div>
                       <div className="flex flex-col leading-none">
                         <span className="text-[10px] font-bold text-slate-900">{details.title}</span>
-                        <span className="text-[8px] text-slate-400 font-sans">Sponsored • Ad</span>
+                        <span className="text-[8px] text-slate-400 font-sans">{isRtl ? 'معاينة الحملة' : 'Campaign Preview'}</span>
                       </div>
                     </div>
                     <span className="text-[14px] text-slate-400 tracking-wider">•••</span>
@@ -158,7 +158,6 @@ export default function PortfolioShowroom({ lang, onRequestSample }: PortfolioSh
                         {details.buttonText}
                       </button>
                     </div>
-
                   </div>
                   
                   {/* Bottom interactions (like/comment/share) */}
@@ -174,50 +173,76 @@ export default function PortfolioShowroom({ lang, onRequestSample }: PortfolioSh
               </div>
 
               {/* Card Meta & Success Metrics */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col justify-between flex-1">
                 
-                {/* Category & Title */}
-                <span className="text-[10px] font-bold text-brand-accent uppercase tracking-wider block mb-1">
-                  {project.category}
-                </span>
-                <h4 className="text-base font-display font-extrabold text-brand-charcoal mb-3 group-hover:text-blue-600 transition-colors">
-                  {isRtl ? project.titleAr : project.title}
-                </h4>
-                <p className="text-slate-500 text-xs leading-relaxed mb-4">
-                  {isRtl ? project.descriptionAr : project.description}
-                </p>
+                <div>
+                  {/* Category & Title */}
+                  <span className="text-[10px] font-bold text-brand-accent uppercase tracking-wider block mb-1">
+                    {project.category}
+                  </span>
+                  <h4 className="text-base font-display font-extrabold text-brand-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                    {isRtl ? project.titleAr : project.title}
+                  </h4>
+                  <p className="text-slate-500 text-xs leading-relaxed mb-4">
+                    {isRtl ? project.descriptionAr : project.description}
+                  </p>
 
-                {/* Conversion Performance Metrics Strip */}
-                <div className="grid grid-cols-2 gap-2 p-3 bg-blue-50/50 rounded-2xl border border-blue-100/50 text-center mb-4">
-                  <div>
-                    <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                      {isRtl ? 'زيادة التفاعل' : 'Engagement Lift'}
-                    </span>
-                    <span className="text-sm font-mono font-extrabold text-brand-primary flex items-center justify-center gap-1">
-                      <Flame className="w-3.5 h-3.5 text-orange-500" />
-                      {project.engagementIncrease}
-                    </span>
-                  </div>
-                  <div>
-                    <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                      {isRtl ? 'معدل التحويل' : 'Conversion Rate'}
-                    </span>
-                    <span className="text-sm font-mono font-extrabold text-brand-secondary flex items-center justify-center gap-1">
-                      <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-                      {project.conversionRate}
-                    </span>
-                  </div>
+                  {/* Case Study Detailed Breakdown */}
+                  {project.client && (
+                    <div className="space-y-2.5 border-t border-slate-100 pt-4 mb-4 text-[11px] sm:text-xs font-sans">
+                      <div className={isRtl ? 'text-right' : 'text-left'}>
+                        <span className="font-extrabold text-slate-800">{isRtl ? 'العميل: ' : 'Client: '}</span>
+                        <span className="text-slate-600">{isRtl ? project.clientAr : project.client}</span>
+                      </div>
+                      <div className={isRtl ? 'text-right' : 'text-left'}>
+                        <span className="font-extrabold text-slate-800">{isRtl ? 'الهدف: ' : 'Goal: '}</span>
+                        <span className="text-slate-600">{isRtl ? project.goalAr : project.goal}</span>
+                      </div>
+                      <div className={isRtl ? 'text-right' : 'text-left'}>
+                        <span className="font-extrabold text-slate-800">{isRtl ? 'التحدي: ' : 'Challenge: '}</span>
+                        <span className="text-slate-600">{isRtl ? project.challengeAr : project.challenge}</span>
+                      </div>
+                      <div className={isRtl ? 'text-right' : 'text-left'}>
+                        <span className="font-extrabold text-slate-800">{isRtl ? 'الحل: ' : 'Solution: '}</span>
+                        <span className="text-slate-600">{isRtl ? project.solutionAr : project.solution}</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
-                {/* Micro CTA */}
-                <button
-                  onClick={onRequestSample}
-                  className="w-full py-2.5 rounded-xl border border-slate-200 hover:border-brand-primary text-slate-600 hover:text-brand-primary font-bold text-xs transition-all flex items-center justify-center gap-1.5"
-                  id={`portfolio-cta-btn-${project.id}`}
-                >
-                  <span>{isRtl ? 'اطلب تصميم مشابه لمشروعك' : 'Request Similar Free Sample'}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
+                <div>
+                  {/* Conversion Performance Metrics Strip */}
+                  <div className="grid grid-cols-2 gap-2 p-3 bg-blue-50/50 rounded-2xl border border-blue-100/50 text-center mb-4">
+                    <div>
+                      <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                        {isRtl ? 'زيادة التفاعل' : 'Engagement Lift'}
+                      </span>
+                      <span className="text-sm font-mono font-extrabold text-brand-primary flex items-center justify-center gap-1">
+                        <Flame className="w-3.5 h-3.5 text-orange-500" />
+                        {project.engagementIncrease}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                        {isRtl ? 'معدل التحويل' : 'Conversion Rate'}
+                      </span>
+                      <span className="text-sm font-mono font-extrabold text-brand-secondary flex items-center justify-center gap-1">
+                        <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                        {project.conversionRate}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Micro CTA */}
+                  <button
+                    onClick={onRequestSample}
+                    className="w-full py-2.5 rounded-xl border border-slate-200 hover:border-brand-primary text-slate-600 hover:text-brand-primary font-bold text-xs transition-all flex items-center justify-center gap-1.5"
+                    id={`portfolio-cta-btn-${project.id}`}
+                  >
+                    <span>{isRtl ? 'اطلب تصميم مشابه لمشروعك' : 'Request Similar Free Sample'}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
 
               </div>
 

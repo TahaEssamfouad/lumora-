@@ -26,6 +26,27 @@ export default function Navigation({ activeTab, setActiveTab, lang, setLang }: N
   const handleNavClick = (tabId: ActiveTab) => {
     setActiveTab(tabId);
     setIsOpen(false);
+    
+    // Force immediate smooth scroll to the section if it exists on the page
+    setTimeout(() => {
+      if (tabId === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const element = document.getElementById(`${tabId}-section`);
+        if (element) {
+          const offset = 100; // Offset for sticky navbar
+          const bodyRect = document.body.getBoundingClientRect().top;
+          const elementRect = element.getBoundingClientRect().top;
+          const elementPosition = elementRect - bodyRect;
+          const offsetPosition = elementPosition - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }, 50);
   };
 
   const isRtl = lang === 'ar';
@@ -156,7 +177,7 @@ export default function Navigation({ activeTab, setActiveTab, lang, setLang }: N
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id as ActiveTab)}
-                  className={`w-full text-left px-4 py-3 rounded-xl text-base font-semibold flex items-center justify-between ${
+                  className={`w-full ${isRtl ? 'text-right flex-row-reverse' : 'text-left'} px-4 py-3 rounded-xl text-base font-semibold flex items-center justify-between ${
                     isActive
                       ? 'bg-blue-50 text-brand-primary'
                       : 'text-slate-700 hover:bg-slate-50 hover:text-brand-primary'

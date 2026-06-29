@@ -30,6 +30,14 @@ export interface PortfolioProject {
   descriptionAr?: string;
   engagementIncrease: string;
   conversionRate: string;
+  client?: string;
+  clientAr?: string;
+  goal?: string;
+  goalAr?: string;
+  challenge?: string;
+  challengeAr?: string;
+  solution?: string;
+  solutionAr?: string;
   mockupDetails: {
     title: string;
     hook: string;

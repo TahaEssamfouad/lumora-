@@ -88,13 +88,13 @@ export default function BeforeAfterSlider({ lang }: BeforeAfterSliderProps) {
             <div>
               <span className="px-2 py-1 rounded bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
                 <AlertTriangle className="w-3 h-3" />
-                {isRtl ? 'إعلان ضعيف تقليدي' : 'Typical Cluttered Ad'}
+                {isRtl ? 'إعلان مكدس تقليدي' : 'Typical Cluttered Ad'}
               </span>
               <h4 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-800 mt-2 font-sans">
-                {isRtl ? 'كريم الوجه العضوي للبيع' : 'Glow Organic Face Cream For Sale'}
+                {isRtl ? 'كريم الوجه العادي للبيع' : 'Typical Cluttered Skincare Ad'}
               </h4>
             </div>
-            <div className="text-right text-xs font-mono text-slate-400">
+            <div className="text-right text-xs font-mono text-slate-500 font-bold">
               CPA: $45.00
             </div>
           </div>
@@ -102,14 +102,11 @@ export default function BeforeAfterSlider({ lang }: BeforeAfterSliderProps) {
           {/* Central Section - Cluttered, Bad Layout */}
           <div className="my-auto grid grid-cols-2 gap-4 items-center">
             <div className="space-y-2">
-              <p className="text-xs text-slate-500 leading-relaxed max-w-xs font-sans">
+              <p className="text-xs text-slate-500 leading-relaxed max-w-xs font-sans italic">
                 {isRtl 
-                  ? 'نحن نبيع أفضل أنواع الكريمات المصنوعة من مواد عضوية طبيعية 100٪. تواصل معنا لمزيد من التفاصيل والأسعار.'
-                  : 'We make cream with good ingredients, high vitamins, premium oils, skincare formula. Click details, read specs.'}
+                  ? '"نحن نصنع كريمًا بمكونات جيدة وفيتامينات عالية وزيوت فاخرة..."'
+                  : '"We make cream with good ingredients, high vitamins, premium oils..."'}
               </p>
-              <div className="text-[10px] bg-slate-200 text-slate-600 px-2 py-1 rounded inline-block font-mono">
-                {isRtl ? 'المكونات: ماء، زيوت، فيتامينات' : 'Ingredients: water, oils, vitamins, active acid...'}
-              </div>
             </div>
             <div className="flex justify-center">
               <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-lg bg-slate-300 border border-slate-400 flex items-center justify-center text-slate-500 text-xs text-center p-2 font-mono">
@@ -120,7 +117,7 @@ export default function BeforeAfterSlider({ lang }: BeforeAfterSliderProps) {
 
           {/* Footer CTA */}
           <div className="flex justify-between items-center border-t border-slate-300 pt-4">
-            <span className="text-xs text-slate-400 font-sans">{isRtl ? 'شراء الآن للجميع' : 'Buy Now for everyone'}</span>
+            <span className="text-xs text-slate-400 font-sans">{isRtl ? 'اضغط للشراء' : 'Click here to purchase'}</span>
             <button className="px-4 py-2 bg-slate-500 text-white rounded text-xs hover:bg-slate-600 font-bold font-sans">
               {isRtl ? 'اضغط هنا' : 'Click Here'}
             </button>
@@ -128,9 +125,10 @@ export default function BeforeAfterSlider({ lang }: BeforeAfterSliderProps) {
           
           {/* Weakness Labels Overlay */}
           <div className="absolute bottom-16 right-4 sm:right-12 space-y-1 bg-red-600/90 text-white text-[10px] px-3 py-1.5 rounded-lg shadow-lg font-bold">
-            <p>✗ {isRtl ? 'لا يوجد عنوان رئيسي جذاب' : 'No psychological hook'}</p>
-            <p>✗ {isRtl ? 'صورة منتج ضعيفة وباهتة' : 'Weak product visualization'}</p>
-            <p>✗ {isRtl ? 'زر اتخاذ إجراء غير واضح' : 'Friction-heavy call to action'}</p>
+            <p>✗ {isRtl ? 'لا يوجد عنوان نفسي مشوق' : 'No psychological hook'}</p>
+            <p>✗ {isRtl ? 'عرض مرئي ضعيف للمنتج' : 'Weak product visualization'}</p>
+            <p>✗ {isRtl ? 'زر اتخاذ إجراء مليء بالاحتكاك' : 'Friction-heavy call to action'}</p>
+            <p>✗ {isRtl ? 'تباين منخفض وصعب القراءة على الجوال' : 'Low contrast, hard to read on mobile'}</p>
           </div>
         </div>
 
@@ -215,9 +213,10 @@ export default function BeforeAfterSlider({ lang }: BeforeAfterSliderProps) {
 
             {/* Strength Highlights Overlay */}
             <div className="absolute bottom-16 left-4 sm:left-12 space-y-1 bg-emerald-600/90 text-white text-[10px] px-3 py-1.5 rounded-lg shadow-lg font-bold">
-              <p>✓ {isRtl ? 'عنوان نفسي عاطفي مثير' : 'High-converting emotional hook'}</p>
-              <p>✓ 'تأثير زجاجي ثلاثي الأبعاد فاخر'</p>
-              <p>✓ {isRtl ? 'عوامل ثقة وضمانات بارزة' : 'Prominent trust metrics'}</p>
+              <p>✓ {isRtl ? 'عنوان نفسي عاطفي جذاب' : 'High-converting emotional hook'}</p>
+              <p>✓ {isRtl ? 'تصوير للمنتج بتأثير زجاجي ثلاثي الأبعاد فاخر' : 'Premium 3D glass effect product visualization'}</p>
+              <p>✓ {isRtl ? 'مؤشرات ثقة وضمانات بارزة في الإعلان' : 'Prominent trust metrics and guarantee'}</p>
+              <p>✓ {isRtl ? 'تباين لافت للانتباه ومحسن بالكامل للجوال' : 'Thumb-stopping contrast optimized for mobile'}</p>
             </div>
 
           </div>
