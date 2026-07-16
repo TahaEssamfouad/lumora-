@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, Check, Send } from 'lucide-react';
 import { FreeSampleRequest } from '../types';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 interface HeroMiniFormProps {
   lang: 'en' | 'ar';
@@ -68,14 +69,14 @@ ${footer}`;
     setError('');
 
     const waText = getWhatsAppText();
-    const waLink = `https://wa.me/201050300190?text=${encodeURIComponent(waText)}`;
+    const waLink = getWhatsAppLink("201050300190", waText);
 
     setTimeout(() => {
       const newRequest: FreeSampleRequest = {
         id: 'req-' + Date.now(),
         businessName,
         website: 'Fast-Track Lead',
-        instagram: 'N/A',
+        whatsapp: 'N/A',
         industry,
         requestDetails,
         createdAt: new Date().toLocaleDateString(isRtl ? 'ar-EG' : 'en-US', {
@@ -126,7 +127,7 @@ ${footer}`;
         {/* Big prominent green WhatsApp send button */}
         <div className="px-2">
           <a
-            href={`https://wa.me/201050300190?text=${encodeURIComponent(getWhatsAppText())}`}
+            href={getWhatsAppLink("201050300190", getWhatsAppText())}
             target="_blank"
             rel="noreferrer"
             className="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-[11px] rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-1.5"

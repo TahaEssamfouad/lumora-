@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FreeSampleRequest } from '../types';
 import { Sparkles, Check, ChevronRight, ChevronLeft, Send, ShieldCheck } from 'lucide-react';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 interface FreeSampleWizardProps {
   lang: 'en' | 'ar';
@@ -13,7 +14,7 @@ export default function FreeSampleWizard({ lang, onSubmitSuccess }: FreeSampleWi
   // Form fields
   const [businessName, setBusinessName] = useState<string>('');
   const [website, setWebsite] = useState<string>('');
-  const [instagram, setInstagram] = useState<string>('');
+  const [whatsapp, setWhatsapp] = useState<string>('');
   const [industry, setIndustry] = useState<string>('ecommerce');
   const [requestDetails, setRequestDetails] = useState<string>('');
   const [customIndustry, setCustomIndustry] = useState<string>('');
@@ -28,6 +29,9 @@ export default function FreeSampleWizard({ lang, onSubmitSuccess }: FreeSampleWi
     if (currentStep === 1) {
       if (!businessName.trim()) {
         newErrors.businessName = isRtl ? 'اسم المشروع مطلوب' : 'Business name is required';
+      }
+      if (!whatsapp.trim()) {
+        newErrors.whatsapp = isRtl ? 'رقم الواتساب مطلوب للتواصل وإرسال التصميم' : 'WhatsApp number is required to send your design';
       }
     }
     if (currentStep === 3) {
@@ -62,7 +66,7 @@ export default function FreeSampleWizard({ lang, onSubmitSuccess }: FreeSampleWi
     const detailsLabel = isRtl ? `تفاصيل طلب العينة:` : `Sample Request Details:`;
     const nameLabel = isRtl ? `اسم المشروع` : `Brand Name`;
     const webLabel = isRtl ? `الموقع الإلكتروني` : `Website`;
-    const instaLabel = isRtl ? `حساب إنستغرام` : `Instagram`;
+    const waLabel = isRtl ? `رقم الواتساب` : `WhatsApp Number`;
     const industryLabel = isRtl ? `مجال العمل` : `Industry`;
     const descLabel = isRtl ? `تفاصيل التصميم المطلوب` : `Design Details`;
     
@@ -75,7 +79,7 @@ export default function FreeSampleWizard({ lang, onSubmitSuccess }: FreeSampleWi
 ${detailsLabel}
 • ${nameLabel}: ${businessName}
 • ${webLabel}: ${website || (isRtl ? 'غير متوفر' : 'N/A')}
-• ${instaLabel}: ${instagram || (isRtl ? 'غير متوفر' : 'N/A')}
+• ${waLabel}: ${whatsapp || (isRtl ? 'غير متوفر' : 'N/A')}
 • ${industryLabel}: ${isRtl ? finalIndustryAr : finalIndustry}
 • ${descLabel}: ${requestDetails}
 
@@ -89,7 +93,7 @@ ${footer}`;
     setIsSubmitting(true);
 
     const waText = getSampleWhatsAppText();
-    const waLink = `https://wa.me/201050300190?text=${encodeURIComponent(waText)}`;
+    const waLink = getWhatsAppLink("201050300190", waText);
 
     // Simulate elite server response
     setTimeout(() => {
@@ -98,7 +102,7 @@ ${footer}`;
         id: 'req-' + Date.now(),
         businessName,
         website: website || 'N/A',
-        instagram: instagram || 'N/A',
+        whatsapp: whatsapp || 'N/A',
         industry: finalIndustry,
         requestDetails,
         createdAt: new Date().toLocaleDateString(isRtl ? 'ar-EG' : 'en-US', {
@@ -218,19 +222,24 @@ ${footer}`;
               />
             </div>
 
-            {/* Instagram Link */}
+            {/* WhatsApp Number Field */}
             <div>
               <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-                {isRtl ? 'حساب إنستغرام الخاص بالشركة (إن وجد)' : 'Instagram Profile (Optional)'}
+                {isRtl ? 'رقم الواتساب الخاص بك للتواصل *' : 'Your WhatsApp Number *'}
               </label>
               <input 
-                type="text"
-                placeholder="@mybusiness"
-                value={instagram}
-                onChange={(e) => setInstagram(e.target.value)}
-                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 focus:border-brand-primary rounded-xl text-sm font-semibold outline-none focus:bg-white focus:ring-1 focus:ring-brand-primary"
-                id="form-instagram"
+                type="tel"
+                placeholder={isRtl ? 'مثال: 201050300190+' : 'e.g. +201050300190'}
+                value={whatsapp}
+                onChange={(e) => setWhatsapp(e.target.value)}
+                className={`w-full px-4 py-3 bg-slate-50 border rounded-xl text-sm font-semibold outline-none focus:bg-white focus:ring-1 focus:ring-brand-primary ${
+                  errors.whatsapp ? 'border-red-400 focus:ring-red-400' : 'border-slate-200 focus:border-brand-primary'
+                }`}
+                id="form-whatsapp"
               />
+              {errors.whatsapp && (
+                <p className="text-xs text-red-500 mt-1">{errors.whatsapp}</p>
+              )}
             </div>
 
             <div className="pt-4 flex justify-end">
@@ -415,7 +424,7 @@ ${footer}`;
                   : '⚡ Send your request details directly to our WhatsApp representative to guarantee expedited design execution in under 2 hours!'}
               </p>
               <a
-                href={`https://wa.me/201050300190?text=${encodeURIComponent(getSampleWhatsAppText())}`}
+                href={getWhatsAppLink("201050300190", getSampleWhatsAppText())}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-xs sm:text-sm rounded-xl transition-all shadow-md hover:shadow-lg hover:shadow-emerald-500/20 flex items-center justify-center gap-2"
@@ -441,7 +450,7 @@ ${footer}`;
                   setStep(1);
                   setBusinessName('');
                   setWebsite('');
-                  setInstagram('');
+                  setWhatsapp('');
                   setRequestDetails('');
                   setCustomIndustry('');
                 }}

@@ -99,7 +99,7 @@ export interface FreeSampleRequest {
   id: string;
   businessName: string;
   website: string;
-  instagram: string;
+  whatsapp: string;
   industry: string;
   requestDetails: string;
   createdAt: string;

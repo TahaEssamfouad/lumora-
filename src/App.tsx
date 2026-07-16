@@ -8,6 +8,7 @@ import FreeSampleWizard from './components/FreeSampleWizard';
 import AdminPortal from './components/AdminPortal';
 import BlogShowcase from './components/BlogShowcase';
 import HeroMiniForm from './components/HeroMiniForm';
+import { getWhatsAppLink } from './utils/whatsapp';
 import { 
   servicesData, 
   whyChooseUsData, 
@@ -160,7 +161,7 @@ ${footer}`;
     setIsSubmittingContact(true);
 
     const waText = getContactWhatsAppText();
-    const waLink = `https://wa.me/201050300190?text=${encodeURIComponent(waText)}`;
+    const waLink = getWhatsAppLink("201050300190", waText);
     setLastContactWaLink(waLink);
 
     setTimeout(() => {
@@ -893,7 +894,7 @@ ${footer}`;
                       </div>
                       <div>
                         <span className="block text-[10px] font-bold text-slate-400 uppercase">{isRtl ? 'قناة واتساب الفورية' : 'Instant WhatsApp'}</span>
-                        <a href="https://wa.me/201050300190" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline font-mono text-sm font-extrabold">
+                        <a href={getWhatsAppLink("201050300190")} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline font-mono text-sm font-extrabold">
                           wa.me/201050300190
                         </a>
                       </div>
@@ -1126,7 +1127,7 @@ ${footer}`;
 
       {/* Floating mobile instant WhatsApp CTA */}
       <a 
-        href="https://wa.me/201050300190" 
+        href={getWhatsAppLink("201050300190")} 
         target="_blank" 
         rel="noreferrer" 
         className="fixed bottom-6 right-6 z-40 bg-emerald-500 text-white p-3.5 rounded-full shadow-2xl hover:bg-emerald-600 transition-all active:scale-95 flex items-center justify-center hover:shadow-emerald-500/10 hover:shadow-xl"

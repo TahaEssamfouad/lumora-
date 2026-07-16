@@ -28,7 +28,7 @@ export default function AdminPortal({ lang }: AdminPortalProps) {
           id: 'req-seed1',
           businessName: 'Artisan Cafe',
           website: 'https://artisancafe.com',
-          instagram: '@artisancafe',
+          whatsapp: '+201012345678',
           industry: 'restaurant',
           requestDetails: 'We want a modern high-contrast coffee design featuring freshly roasted beans and our signature latte.',
           createdAt: new Date(Date.now() - 3600000 * 4).toLocaleString(isRtl ? 'ar-EG' : 'en-US'),
@@ -38,7 +38,7 @@ export default function AdminPortal({ lang }: AdminPortalProps) {
           id: 'req-seed2',
           businessName: 'Apex SaaS',
           website: 'https://apex-engine.io',
-          instagram: '@apexengine',
+          whatsapp: '+201087654321',
           industry: 'technology',
           requestDetails: 'Sleek dark mode ad for Slack & Notion integrations. Hook should emphasize time-saving metrics.',
           createdAt: new Date(Date.now() - 3600000 * 24).toLocaleString(isRtl ? 'ar-EG' : 'en-US'),
@@ -327,8 +327,8 @@ export default function AdminPortal({ lang }: AdminPortalProps) {
                   </a>
                 </div>
                 <div>
-                  <span className="block text-[10px] font-bold text-slate-400 uppercase">{isRtl ? 'إنستغرام' : 'Instagram'}</span>
-                  <span className="font-mono text-brand-charcoal">{selectedRequest.instagram}</span>
+                  <span className="block text-[10px] font-bold text-slate-400 uppercase">{isRtl ? 'رقم الواتساب' : 'WhatsApp Number'}</span>
+                  <span className="font-mono text-brand-charcoal">{selectedRequest.whatsapp}</span>
                 </div>
                 <div>
                   <span className="block text-[10px] font-bold text-slate-400 uppercase">{isRtl ? 'تفاصيل الطلب والخصائص' : 'Request Requirements'}</span>
